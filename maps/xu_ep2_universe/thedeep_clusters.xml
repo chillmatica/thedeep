@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<macros>
+  <!-- The Deep Cluster -->
+  <macro name="thedeep_cluster_thedeepc001_macro" class="cluster">
+    <component ref="standardcluster"/>
+    <connections>
+      <!-- The Deep Sector -->
+      <connection name="thedeep_sector_thedeepc001thedeeps001_connection" ref="sectors">  
+        <macro ref="thedeep_sector_thedeepc001thedeeps001_macro" connection="cluster"/>
+      </connection>
+	  
+	  <connection name="thedeep_region_thedeepc001thedeepr001_connection" ref="regions">
+        <offset>
+          <position x="0" y="0" z="0"/>
+        </offset>
+        <macro name="thedeep_region_thedeepc001thedeepr001_macro">
+          <component connection="cluster" ref="standardregion"/>
+          <properties>
+            <region ref="thedeep_region_thedeepc001thedeepr001"/>
+          </properties>
+        </macro>
+      </connection>
+	  
+      <connection ref="content">
+        <macro>
+          <component connection="space" ref="thedeep_cluster_thedeepc001"/>
+        </macro>
+      </connection>
+    </connections>
+  </macro>
+  
+  <!-- The Shallows Cluster -->
+  <macro name="thedeep_cluster_theshallowsc001_macro" class="cluster">
+    <component ref="standardcluster"/>
+    <connections>
+	  <!-- The Shallows Sector -->
+      <connection name="thedeep_sector_theshallowsc001theshallowss001_connection" ref="sectors">  
+        <macro ref="thedeep_sector_theshallowsc001theshallowss001_macro" connection="cluster"/>
+      </connection>
+	  
+	  <connection name="thedeep_region_theshallowsc001theshallowsr001_connection" ref="regions">
+        <offset>
+          <position x="0" y="0" z="0"/>
+        </offset>
+        <macro name="thedeep_region_theshallowsc001theshallowsr001_macro">
+          <component connection="cluster" ref="standardregion"/>
+          <properties>
+            <region ref="thedeep_region_theshallowsc001theshallowsr001"/>
+          </properties>
+        </macro>
+      </connection>
+	  
+      <connection ref="content">
+        <macro>
+          <component connection="space" ref="thedeep_cluster_theshallowsc001"/>
+        </macro>
+      </connection>
+    </connections>
+  </macro>
+  
+</macros>

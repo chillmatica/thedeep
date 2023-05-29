@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+  <add sel="/language">
+    <page id="900001" voice="yes">
+      <t id="100001">The Deep</t>
+      <t id="100002">Unbeknownst to the Alliance of the Word expedition investigating the strange inactive gate in Heretic's End, Argon scientists were covertly investigating the long inactive gate in their own backyard of Argon Prime. Though they didn't have their own pocket genius Boron to work on it, they were shocked when the gate suddenly came to life after the success of the ALI mission. Upon the first ships entering the new found murky sector, a squeeky-voiced scout pilot pushed up his glasses and exclaimed over comms, "There's no fog in space! Fog in space is stupid!", to which the entire local communication relay network replied, "Shut up, nerd."</t>
+      <t id="100003">{20005, 9003}</t> The Shallows
+      <t id="100004">Unbeknownst to the Alliance of the Word expedition investigating the strange inactive gate in Heretic's End, Argon scientists were covertly investigating the long inactive gate in their own backyard of Argon Prime. Though they didn't have their own pocket genius Boron to work on it, they were shocked when the gate suddenly came to life after the success of the ALI mission. Upon the first ships entering the new found murky sector, a squeeky-voiced scout pilot pushed up his glasses and exclaimed over comms, "There's no fog in space! Fog in space is stupid!", to which the entire local communication relay network replied, "Shut up, nerd."</t>
+    </page>
+  </add>
+</diff>

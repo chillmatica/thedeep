@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+<add sel="//cue[@name='Boron_Gates_Open_KingdomEnd']/actions">
+	<find_sector macro="macro.thedeep_sector_thedeepc001thedeeps001_macro" space="player.galaxy" required="true" name="$TheDeepSector" />
+	<find_sector macro="macro.thedeep_sector_theshallowsc001theshallowss001_macro" space="player.galaxy" required="true" name="$TheShallowsSector" />
+	
+	<find_gate name="$TheDeepGates" multiple="true" space="$TheDeepSector" active="false" />
+	<find_gate name="$TheShallowsGates" multiple="true" space="$TheShallowsSector" active="false" />
+	
+	
+	<do_for_each name="$g" in="$TheDeepGates">
+		<do_if value=" ($g.exit.exists) and ($g.exit.sector == $TheShallowsSector)">
+		<set_value name="$TheShallows_TheDeepGate" exact="$g.exit" />
+		<set_value name="$TheDeep_TheShallowsGate" exact="$g" />
+		</do_if>
+	</do_for_each>
+	<remove_value name="$TheDeepGates" />
+
+	<set_object_active object="$TheDeep_TheShallowsGate" activate="true" />
+</add>
+</diff>

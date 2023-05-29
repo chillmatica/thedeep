@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+  <!-- Atreus Cloud Zone -->
+  <add sel="/macros" silent="true">
+    <macro name="thedeep_zone_boronc608borons001theshallowsz001_macro" class="zone">
+      <component ref="standardzone"/>
+      <connections>
+      <!-- Atreus Cloud to The Shallows Sector -->
+        <connection name="thedeep_gate_boronc608borons001theshallowsz001_theshallowsc001theshallowss001theshallowsz001_connection" ref="gates">
+          <offset>
+            <position x="0" y="0" z="0"/>
+            <rotation yaw="0" pitch="0" roll="0"/>
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space"/>
+        </connection>
+      </connections>
+    </macro>
+  </add>
+</diff>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+  <add sel="/index">  
+    <entry name="thedeep_cluster_thedeepc001" value="extensions\thedeep\assets\environments\cluster\thedeep_env_cluster_thedeepc001"/>
+	<entry name="thedeep_cluster_theshallowsc001" value="extensions\thedeep\assets\environments\cluster\thedeep_env_cluster_theshallowsc001"/>
+  </add>
+</diff>

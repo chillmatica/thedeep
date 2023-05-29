@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<macros xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!-- The Deep Zone 1 -->
+  <macro name="thedeep_zone_thedeepc001thedeeps001thedeepz001_macro" class="zone">
+    <component ref="standardzone"/>
+    <connections>
+	<!-- The Deep Gate to Argon Prime -->
+      <connection name="thedeep_gate_vanc014vans001thedeepz001_thedeepc001thedeeps001thedeepz001_connection" ref="gates">
+        <offset>
+          <position x="0" y="0" z="0"/>
+          <rotation yaw="270" pitch="0" roll="0"/>
+        </offset>
+        <macro ref="props_gates_anc_gate_macro" connection="space"/>
+      </connection>
+    </connections>
+  </macro>
+<!-- The Deep Zone 2 -->
+  <macro name="thedeep_zone_thedeepc001thedeeps001thedeepz002_macro" class="zone">
+    <component ref="standardzone"/>
+    <connections>
+	<!-- The Deep Gate to Shallows -->
+      <connection name="thedeep_gate_thedeepc001thedeeps001thedeepz002_theshallowsc001theshallowss001theshallowsz002_connection" ref="gates">
+        <offset>
+          <position x="0" y="0" z="0"/>
+          <rotation yaw="90" pitch="0" roll="0"/>
+        </offset>
+        <macro ref="props_gates_orb_accelerator_02_macro" connection="space" >
+		<properties>
+            <state active="false" />
+         </properties>
+		</macro>
+      </connection>
+    </connections>
+  </macro>
+ <!-- The Shallows Zone 2 -->
+  <macro name="thedeep_zone_theshallowsc001theshallowss001theshallowsz002_macro" class="zone">
+    <component ref="standardzone"/>
+    <connections>
+	<!-- The Shallows Gate to the Deep -->
+      <connection name="thedeep_gate_theshallowsc001theshallowss001theshallowsz002_thedeepc001thedeeps001thedeepz002_connection" ref="gates">
+        <offset>
+          <position x="0" y="0" z="0"/>
+          <rotation yaw="270" pitch="0" roll="0"/>
+        </offset>
+        <macro ref="props_gates_orb_accelerator_02_macro" connection="space" >
+		<properties>
+            <state active="false" />
+         </properties>
+		</macro>
+      </connection>
+    </connections>
+  </macro>
+  <!-- The Shallows Zone 1 -->
+  <macro name="thedeep_zone_theshallowsc001theshallowss001theshallowsz001_macro" class="zone">
+    <component ref="standardzone"/>
+    <connections>
+	<!-- The Shallows Gate to Atreus -->
+      <connection name="thedeep_gate_boronc608borons001theshallowsz001_theshallowsc001theshallowss001theshallowsz001_connection" ref="gates">
+        <offset>
+          <position x="0" y="0" z="0"/>
+          <rotation yaw="90" pitch="0" roll="0"/>
+        </offset>
+        <macro ref="props_gates_anc_gate_macro" connection="space"/>
+      </connection>
+    </connections>
+  </macro>
+</macros>

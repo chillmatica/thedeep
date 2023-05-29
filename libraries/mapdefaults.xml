@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaults xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="libraries.xsd">
+  <!-- The Deep Cluster -->
+  <dataset macro="thedeep_cluster_thedeepc001_macro">
+    <properties>
+	  <identification name="{900001,100001}" description="{900001,100002}" image="enc_cluster01"/>
+      <sounds>
+        <music ref="music_dlc_boron_soundtrack_border" />
+      </sounds>
+      <area sunlight="0.29" economy="0.75" security="0.75" factionlogic="true" />
+      <system>
+        <space environment="{1042,12061}(Heavy Radiation)" />
+        <suns>
+          <sun class="{1042,13031}(Orange Dwarf)" />
+        </suns>
+        <planets>
+          <planet name="{20005,9075}(Narasimha)" class="{1042,14031}(Terrestrial)" geology="{1042,15101}(Barren)" atmosphere="{1042,10011}(None)" population="{1042,10011}(None)" settlements="{1042,16011}(Uninhabited)">
+            <moons>
+              <moon name="{20005,9075}(Narasimha) {20402,1}(I)" geology="{1042,15071}(Rocks)" atmosphere="{1042,10011}(None)" population="{1042,10011}(None)" settlements="{1042,16011}(Uninhabited)" />
+            </moons>
+          </planet>
+        </planets>
+      </system>
+    </properties>
+  </dataset>
+  <!-- The Deep Sector -->
+  <dataset macro="thedeep_sector_thedeepc001thedeeps001_macro">
+    <properties>
+      <identification name="{900001,100001}" description="{900001,100002}"/>
+      <!-- <area sunlight="1.0" economy="0.0" security="0.0"/> -->
+    </properties>
+  </dataset>
+  
+  <!-- The Shallows Cluster -->
+  <dataset macro="thedeep_cluster_theshallowsc001_macro">
+    <properties>
+	  <identification name="{900001,100003}" description="{900001,100004}" image="enc_cluster01"/>
+      <sounds>
+        <music ref="music_dlc_boron_soundtrack_border" />
+      </sounds>
+      <area sunlight="0.69" economy="0.75" security="0.75" factionlogic="true" />
+      <system>
+        <space environment="{1042,12061}(Heavy Radiation)" />
+        <suns>
+          <sun class="{1042,13031}(Orange Dwarf)" />
+        </suns>
+        <planets>
+          <planet name="{20005,9075}(Narasimha)" class="{1042,14031}(Terrestrial)" geology="{1042,15101}(Barren)" atmosphere="{1042,10011}(None)" population="{1042,10011}(None)" settlements="{1042,16011}(Uninhabited)">
+            <moons>
+              <moon name="{20005,9075}(Narasimha) {20402,1}(I)" geology="{1042,15071}(Rocks)" atmosphere="{1042,10011}(None)" population="{1042,10011}(None)" settlements="{1042,16011}(Uninhabited)" />
+            </moons>
+          </planet>
+        </planets>
+      </system>
+    </properties>
+  </dataset>
+  <!-- The Shallows Sector -->
+  <dataset macro="thedeep_sector_theshallowsc001theshallowss001_macro">
+    <properties>
+      <identification name="{900001,100003}" description="{900001,100004}"/>
+      <!-- <area sunlight="1.0" economy="0.0" security="0.0"/> -->
+    </properties>
+  </dataset>
+</defaults>

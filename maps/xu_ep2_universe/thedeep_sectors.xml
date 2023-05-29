@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<macros>
+  <!-- The Deep Sector -->
+  <macro name="thedeep_sector_thedeepc001thedeeps001_macro" class="sector">
+    <component ref="standardsector"/>
+    <connections>
+      <!-- The Deep-Argon Zone -->
+      <connection name="thedeep_zone_thedeepc001thedeeps001thedeepz001_connection" ref="zones">
+        <offset>
+          <position x="80000" y="1500" z="70000"/>
+        </offset>
+        <macro ref="thedeep_zone_thedeepc001thedeeps001thedeepz001_macro" connection="sector"/>
+      </connection>
+	  <!-- The Deep-The Shallows Zone -->
+	  <connection name="thedeep_zone_thedeepc001thedeeps001thedeepz002_connection" ref="zones">
+        <offset>
+          <position x="-120000" y="1500" z="-80000"/>
+        </offset>
+        <macro ref="thedeep_zone_thedeepc001thedeeps001thedeepz002_macro" connection="sector"/>
+      </connection>
+    </connections>
+  </macro>
+  <!-- The Shallows Sector -->
+  <macro name="thedeep_sector_theshallowsc001theshallowss001_macro" class="sector">
+    <component ref="standardsector"/>
+    <connections>
+      <!-- The Shallows-The Deep Zone -->
+      <connection name="thedeep_zone_theshallowsc001theshallowss001theshallowsz002_connection" ref="zones">
+        <offset>
+          <position x="70000" y="1500" z="70000"/>
+        </offset>
+        <macro ref="thedeep_zone_theshallowsc001theshallowss001theshallowsz002_macro" connection="sector"/>
+      </connection>
+	<!-- The Shallows-Atreus Zone -->
+      <connection name="thedeep_zone_theshallowsc001theshallowss001theshallowsz001_connection" ref="zones">
+        <offset>
+          <position x="-100000" y="1500" z="-50000"/>
+        </offset>
+        <macro ref="thedeep_zone_theshallowsc001theshallowss001theshallowsz001_macro" connection="sector"/>
+      </connection>
+    </connections>
+  </macro>
+</macros>

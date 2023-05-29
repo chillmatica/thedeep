@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+  <add sel="/regions">
+    <!-- The Deep Main Region -->
+    <region name="thedeep_region_thedeepc001thedeepr001" density="1" rotation="0" noisescale="15000" seed="8888" minnoisevalue="0.0" maxnoisevalue="1">
+      <boundaries>
+        <boundary class="cylinder">
+			<size r="500000" linear="7500" />
+    </boundary>
+      </boundaries>
+      <falloff>
+      <lateral>
+        <step position="0.0" value="0.0" />
+        <step position="0.1" value="1.0" />
+        <step position="0.9" value="1.0" />
+        <step position="1.0" value="0.0" />
+      </lateral>
+      <radial>
+        <step position="0.0" value="1.0" />
+        <step position="0.3" value="1.0" />
+        <step position="0.5" value="0.9" />
+        <step position="0.9" value="0.4" />
+        <step position="1.0" value="0.0" />
+      </radial>
+    </falloff>
+      <fields>
+		<nebula ref="fogpattern_v2_macro" localred="255" localgreen="255" localblue="255" localdensity="0.75" uniformred="0" uniformgreen="137" uniformblue="124" uniformdensity="0.0" backgroundfog="false" resources="hydrogen" fogdistance="15000" />
+		<debris groupref="debris_xenon_xl" densityfactor="1.0" rotation="360" rotationvariation="4" noisescale="10000" seed="32" minnoisevalue="0.60" maxnoisevalue="1" distancefactor="1.0" />
+		<!-- <debris groupref="debris_xenon_l" densityfactor="0.30" rotation="360" rotationvariation="1" noisescale="10000" seed="32" minnoisevalue="0.540" maxnoisevalue="1" /> -->
+		<debris groupref="debris_paranid_xl" densityfactor="0.9" rotation="360" rotationvariation="1" noisescale="10000" seed="32" minnoisevalue="0.540" maxnoisevalue="1" />
+		<debris groupref="debris_teladi_xl" densityfactor="0.9" rotation="360" rotationvariation="1" noisescale="10000" seed="32" minnoisevalue="0.540" maxnoisevalue="1" />
+		<asteroid groupref="asteroid_ice_xl" densityfactor="1" rotation="0" rotationvariation="8" noisescale="5000" seed="8888" minnoisevalue="0.55" maxnoisevalue="1" />
+		<asteroid groupref="asteroid_ice_l" densityfactor="2" rotation="0" rotationvariation="16" noisescale="5000" seed="8888" minnoisevalue="0.55" maxnoisevalue="1" />
+		<!-- Fog donut -->
+		<!-- <volumetricfog multiplier="1.0" medium="fog_greytunnel" texture="assets/textures/environments/fog_smoothclouds_03" lodrule="nebulafar" size="100000" sizevariation="0.5" densityfactor="0.005" rotation="360" rotationvariation="0.0" noisescale="1000" seed="32" minnoisevalue="0.0" maxnoisevalue="1.0" distancefactor="0.50"/> -->
+		<!-- The Deep fog -->
+		<volumetricfog multiplier="1.0" medium="fog_greytunnel" texture="assets/textures/environments/fog_smoothclouds_03" lodrule="nebulafar" size="100000" sizevariation="0.25" densityfactor="0.025" rotation="360" rotationvariation="0.0" noisescale="1000" seed="8888" minnoisevalue="0.0" maxnoisevalue="3.0" distancefactor="0.25"/>
+		<!-- Lighter fog -->
+		<!-- <volumetricfog multiplier="0.125" medium="fog_greytunnel" texture="assets/textures/environments/fog_smoothclouds_03" lodrule="nebulafar" size="100000" sizevariation="0.25" densityfactor="0.025" rotation="360" rotationvariation="0.0" noisescale="1000" seed="8888" minnoisevalue="0.0" maxnoisevalue="3.0" distancefactor="0.25"/> -->
+		<!-- Outer Banks fog -->
+		<!-- <volumetricfog multiplier="1.0" medium="fog_ke" texture="assets/textures/environments/fog_smoothclouds_03" lodrule="nebulafar" size="100000" sizevariation="0.25" densityfactor="0.025" rotation="360" rotationvariation="0.0" noisescale="1000" seed="8888" minnoisevalue="0.0" maxnoisevalue="3.0" distancefactor="0.25"/> -->
+		<effect ref="region_lightning_effect" delay="4.15" delayvariation="3.9" affectsnavigation="false" hazardwarning="false">
+			
+		</effect>
+      </fields>
+      <resources>
+		<resource ware="ice" yield="high"/>
+        <resource ware="hydrogen" yield="high"/>
+		<resource ware="rawscrap" yield="medium" />
+      </resources>
+    </region>
+  </add>
+  
+  <add sel="/regions">
+	<!-- The Shallows Main Region -->
+	<region name="thedeep_region_theshallowsc001theshallowsr001" density="1" rotation="0" noisescale="15000" seed="8888" minnoisevalue="0.0" maxnoisevalue="1">
+      <boundaries>
+        <boundary class="cylinder">
+			<size r="500000" linear="7500" />
+		</boundary>
+      </boundaries>
+      <falloff>
+		<lateral>
+			<step position="0.0" value="0.0" />
+			<step position="0.1" value="1.0" />
+			<step position="0.9" value="1.0" />
+			<step position="1.0" value="0.0" />
+		</lateral>
+		<radial>
+			<step position="0.0" value="1.0" />
+			<step position="0.3" value="1.0" />
+			<step position="0.5" value="0.9" />
+			<step position="0.9" value="0.4" />
+			<step position="1.0" value="0.0" />
+		</radial>
+		</falloff>
+      <fields>
+		<!-- <nebula ref="fogpattern_v2_macro" localred="255" localgreen="255" localblue="255" localdensity="0.75" uniformred="0" uniformgreen="137" uniformblue="124" uniformdensity="0.0" backgroundfog="false" resources="hydrogen" fogdistance="15000" /> -->
+		<debris groupref="debris_xenon_xl" densityfactor="0.7" rotation="360" rotationvariation="4" noisescale="10000" seed="32" minnoisevalue="0.60" maxnoisevalue="1" distancefactor="2.0" />
+		<!-- <debris groupref="debris_xenon_l" densityfactor="0.30" rotation="360" rotationvariation="1" noisescale="10000" seed="32" minnoisevalue="0.540" maxnoisevalue="1" /> -->
+		<debris groupref="debris_paranid_xl" densityfactor="0.3" rotation="360" rotationvariation="1" noisescale="10000" seed="32" minnoisevalue="0.540" maxnoisevalue="1" distancefactor="2.0" />
+		<debris groupref="debris_split_xl" densityfactor="0.2" rotation="360" rotationvariation="1" noisescale="10000" seed="32" minnoisevalue="0.540" maxnoisevalue="1" distancefactor="2.0" />
+		<asteroid groupref="asteroid_ore_xxl" lodrule="asteroidxl" densityfactor="2" rotation="0" rotationvariation="8" noisescale="5000" seed="8888" minnoisevalue="0.55" maxnoisevalue="1" distancefactor="2.0"/>
+		<asteroid groupref="asteroid_ore_l" densityfactor="1" rotation="0" rotationvariation="16" noisescale="5000" seed="8888" minnoisevalue="0.55" maxnoisevalue="1" distancefactor="6.0" />
+		<!-- The Shallows fog -->
+		<volumetricfog multiplier="0.5" medium="fog_ke" texture="assets/textures/environments/fog_smoothclouds_03" lodrule="nebulafar" size="100000" sizevariation="0.25" densityfactor="0.025" rotation="360" rotationvariation="0.0" noisescale="1000" seed="8888" minnoisevalue="0.0" maxnoisevalue="3.0" distancefactor="0.25"/>
+		
+      </fields>
+      <resources>
+		<resource ware="ore" yield="high"/>
+		<resource ware="rawscrap" yield="medium" />
+      </resources>
+    </region>
+  </add>
+</diff>

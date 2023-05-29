@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<macros>
+  <macro name="thedeep_cluster_theshallowsc001_macro" class="celestialbody">
+    <component ref="thedeep_cluster_theshallowsc001"/>
+    <properties>
+      <identification unique="0"/>
+    </properties>
+  </macro>
+</macros>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+  <entry name="thedeep_galaxy_macro" value="extensions\thedeep\maps\XU_ep2_universe\galaxy"/>
+  <entry name="thedeep_cluster*" value="extensions\thedeep\maps\XU_ep2_universe\thedeep_clusters"/>
+  <entry name="thedeep_sector*" value="extensions\thedeep\maps\XU_ep2_universe\thedeep_sectors"/>
+  <entry name="thedeep_zone*" value="extensions\thedeep\maps\XU_ep2_universe\thedeep_zones"/>
+  <entry name="thedeep_region*" value="extensions\thedeep\libraries\region_definitions"/>
+</index>
