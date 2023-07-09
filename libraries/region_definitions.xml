@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <diff>
   <add sel="/regions">
     <!-- The Deep Main Region -->
@@ -34,7 +34,7 @@
 		<!-- Fog donut -->
 		<!-- <volumetricfog multiplier="1.0" medium="fog_greytunnel" texture="assets/textures/environments/fog_smoothclouds_03" lodrule="nebulafar" size="100000" sizevariation="0.5" densityfactor="0.005" rotation="360" rotationvariation="0.0" noisescale="1000" seed="32" minnoisevalue="0.0" maxnoisevalue="1.0" distancefactor="0.50"/> -->
 		<!-- The Deep fog -->
-		<volumetricfog multiplier="1.0" medium="fog_greytunnel" texture="assets/textures/environments/fog_smoothclouds_03" lodrule="nebulafar" size="100000" sizevariation="0.25" densityfactor="0.025" rotation="360" rotationvariation="0.0" noisescale="1000" seed="8888" minnoisevalue="0.0" maxnoisevalue="3.0" distancefactor="0.25"/>
+		<volumetricfog multiplier="1.0" medium="fog_greytunnel" texture="assets/textures/environments/fog_smoothclouds_03" lodrule="nebulafar" size="100000" sizevariation="0.25" densityfactor="0.005" rotation="360" rotationvariation="0.0" noisescale="1000" seed="8888" minnoisevalue="0.0" maxnoisevalue="3.0" distancefactor="0.25"/>
 		<!-- Lighter fog -->
 		<!-- <volumetricfog multiplier="0.125" medium="fog_greytunnel" texture="assets/textures/environments/fog_smoothclouds_03" lodrule="nebulafar" size="100000" sizevariation="0.25" densityfactor="0.025" rotation="360" rotationvariation="0.0" noisescale="1000" seed="8888" minnoisevalue="0.0" maxnoisevalue="3.0" distancefactor="0.25"/> -->
 		<!-- Outer Banks fog -->

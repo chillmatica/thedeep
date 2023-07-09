@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diff>
+<add sel="/jobs">
+    <job id="argon_refinedmineral_trader_l_TD" name="{20204,501}" >
+    <modifiers rebuild="false" commandeerable="true"/>
+    <orders>
+      <order order="TradeRoutine" default="true">
+        <param name="minbuy" value="0"/>
+        <param name="maxbuy" value="0"/>
+        <param name="minsell" value="0"/>
+        <param name="maxsell" value="5"/>
+      </order>
+    </orders>
+    <basket basket="refined_mineral"/>
+    <category faction="argon" tags="[factionlogic, freighter, trader]" size="ship_l"/>
+    <quota galaxy="2" sector="2"/>
+    <location class="sector" macro="thedeep_sector_thedeepc001thedeeps001_macro" faction="argon" relation="ally" comparison="ge" matchextension="false" />
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[trader, container]" size="ship_l"/>
+      <loadout>
+        <level min="0" max="0.4"/>
+      </loadout>
+      <owner exact="argon" overridenpc="true"/>
+    </ship>
+  </job>
+  <job id="argon_free_miner_l_liquid_TD" name="{20204,5701}" >
+    <modifiers rebuild="false" commandeerable="true"/>
+    <orders>
+      <order order="MiningRoutine" default="true">
+        <param name="minbuy" value="0"/>
+        <param name="maxbuy" value="0"/>
+        <param name="minsell" value="0"/>
+        <param name="maxsell" value="5"/>
+      </order>
+    </orders>
+    <basket basket="gases"/>
+    <category faction="argon" tags="[factionlogic, freighter, miner]" size="ship_l"/>
+    <quota galaxy="2" sector="2" />
+    <location class="sector" macro="thedeep_sector_thedeepc001thedeeps001_macro" faction="argon" relation="ally" comparison="ge" regionbasket="gases" matchextension="false"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[miner, liquid]" size="ship_l"/>
+      <loadout>
+        <level min="0.1" max="0.7"/>
+      </loadout>
+      <owner exact="argon" overridenpc="true"/>
+      <cargo>
+        <wares multiple="true">
+          <fillpercent min="0" max="100" profile="inversebell"/>
+        </wares>
+      </cargo>
+    </ship>
+  </job>
+  <job id="argon_free_miner_l_mineral_TD" name="{20204,5601}" >
+    <modifiers rebuild="false" commandeerable="true"/>
+    <orders>
+      <order order="MiningRoutine" default="true">
+        <param name="minbuy" value="0"/>
+        <param name="maxbuy" value="0"/>
+        <param name="minsell" value="0"/>
+        <param name="maxsell" value="5"/>
+      </order>
+    </orders>
+    <basket basket="minerals"/>
+    <category faction="argon" tags="[factionlogic, freighter, miner]" size="ship_l"/>
+    <quota galaxy="2" sector="2" />
+    <location class="sector" macro="thedeep_sector_thedeepc001thedeeps001_macro" faction="argon" relation="ally" comparison="ge" regionbasket="minerals" matchextension="false"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[miner, solid]" size="ship_l"/>
+      <loadout>
+        <level min="0.1" max="0.7"/>
+      </loadout>
+      <owner exact="argon" overridenpc="true"/>
+      <cargo>
+        <wares>
+          <fillpercent min="0" max="100" profile="inversebell"/>
+        </wares>
+      </cargo>
+    </ship>
+  </job>
+
+  <job id="boron_free_miner_l_liquid_TS" name="{20204,5701}" >
+      <modifiers rebuild="false" commandeerable="true" />
+      <orders>
+        <order order="MiningRoutine" default="true">
+          <param name="minbuy" value="0" />
+          <param name="maxbuy" value="1" />
+          <param name="minsell" value="0" />
+          <param name="maxsell" value="5" />
+        </order>
+      </orders>
+      <basket basket="gases" />
+      <category faction="boron" tags="[factionlogic, freighter, miner]" size="ship_l" />
+      <quota galaxy="2" sector="2" />
+      <location class="sector" macro="thedeep_sector_theshallowsc001theshallowss001_macro" faction="boron" relation="ally" comparison="ge" matchextension="false" />
+      <environment buildatshipyard="true" />
+      <ship>
+        <select faction="boron" tags="[miner, liquid]" size="ship_l" />
+        <loadout>
+          <level min="0.1" max="0.7" />
+        </loadout>
+        <owner exact="boron" overridenpc="true" />
+        <cargo>
+          <wares multiple="true">
+            <fillpercent min="0" max="100" profile="inversebell" />
+          </wares>
+        </cargo>
+      </ship>
+    </job>
+    <job id="boron_free_miner_l_ice_TS" name="{20204,2001}" >
+      <modifiers rebuild="false" commandeerable="true" />
+      <orders>
+        <order order="MiningRoutine" default="true">
+          <param name="minbuy" value="0" />
+          <param name="maxbuy" value="1" />
+          <param name="minsell" value="0" />
+          <param name="maxsell" value="5" />
+        </order>
+      </orders>
+      <basket basket="ice" />
+      <category faction="boron" tags="[factionlogic, freighter, miner]" size="ship_l" />
+      <quota galaxy="3" sector="3" />
+      <location class="sector" macro="thedeep_sector_theshallowsc001theshallowss001_macro" faction="boron" relation="ally" comparison="ge" matchextension="false" />
+      <environment buildatshipyard="true" />
+      <ship>
+        <select faction="boron" tags="[miner, solid]" size="ship_l" />
+        <loadout>
+          <level min="0.1" max="0.7" />
+        </loadout>
+        <owner exact="boron" overridenpc="true" />
+        <cargo>
+          <wares>
+            <fillpercent min="0" max="100" profile="inversebell" />
+          </wares>
+        </cargo>
+      </ship>
+    </job>
+    <job id="boron_universal_trader_l_TS" name="{20204,17301}" >
+      <modifiers rebuild="false" commandeerable="true" />
+      <orders>
+        <order order="TradeRoutine" default="true">
+          <param name="minbuy" value="0" />
+          <param name="maxbuy" value="1" />
+          <param name="minsell" value="0" />
+          <param name="maxsell" value="7" />
+        </order>
+      </orders>
+      <basket basket="water" />
+      <category faction="boron" tags="[factionlogic, freighter, trader]" size="ship_l" />
+      <quota galaxy="3" sector="3" />
+      <location class="sector" macro="thedeep_sector_theshallowsc001theshallowss001_macro" faction="boron" relation="ally" comparison="ge" matchextension="false" />
+      <environment buildatshipyard="true" />
+      <ship>
+        <select faction="boron" tags="[trader, container]" size="ship_l" />
+        <loadout>
+          <level min="0.7" max="1.0" />
+        </loadout>
+        <owner exact="boron" overridenpc="true" />
+      </ship>
+      <subordinates>
+        <subordinate job="boron_corvette_escort_m" />
+      </subordinates>
+    </job>
+</add>
+</diff>

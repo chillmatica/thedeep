@@ -2,7 +2,6 @@
 <diff>
 
 	<add sel="/god/stations">
-
     <station id="arg_tradestation_TD" race="argon" owner="argon" type="tradingstation">
       <quotas>
         <quota galaxy="1" sector="1" />
@@ -12,27 +11,147 @@
         <select faction="argon" tags="[tradestation]" />
       </station>
     </station>
-	<station id="bor_tradestation_TS" race="boron" owner="boron" type="tradingstation">
-      <quotas>
-        <quota galaxy="1" sector="1" />
-      </quotas>
-      <location class="sector" macro="thedeep_sector_theshallowsc001theshallowss001_macro"  />
-      <station>
-        <select faction="boron" tags="[tradestation]" />
-      </station>
-    </station>
+    <station id="boron_alliancehub_TS" race="boron" owner="boron" type="tradingstation" respawnable="true">
+        <quotas>
+                <quota galaxy="1" sector="1" />
+            </quotas>
+            <location class="sector" macro="thedeep_sector_theshallowsc001theshallowss001_macro" />
+            <station>
+                <select faction="boron" tags="[tradestation_alliancehub]" />
+                <loadout>
+                <level exact="0.75" />
+                </loadout>
+            </station>
+        </station>
 
 	</add>
 
-	<!-- <add sel="/god/objects">
-		<object id="derelict_station_TD">
-		  <quotas>
-			<quota galaxy="1" />
-		  </quotas>
-		  <location class="sector" macro="thedeep_sector_thedeepc001thedeeps001_macro" />
-		  <position x="150000" y="4000" z="60000"/>
-		  <object macro="landmarks_gen_old_ringstation_macro" />
-		</object>
-	</add> -->
+  <add sel="/god/products">
+    
+    <product id="arg_meat_TD" ware="meat" owner="argon" type="factory">
+      <quotas>
+        <quota galaxy="1" sector="1" />
+      </quotas>
+      <location class="sector" macro="thedeep_sector_thedeepc001thedeeps001_macro" faction="[argon, hatikvah]" relation="self" comparison="ge">
+        <economy max="0.75" maxbound="false"/>
+      </location>
+      <module>
+        <select ware="meat" race="argon"/>
+      </module>
+    </product>
+    <product id="arg_water_TD" ware="water" owner="argon" type="factory">
+      <quotas>
+        <quota galaxy="1" sector="1" />
+      </quotas>
+      <location class="sector" macro="thedeep_sector_thedeepc001thedeeps001_macro" faction="[argon]" relation="self" comparison="ge">
+        <region ware="ice" max="100000" />
+      </location>
+      <module>
+        <select ware="water" race="argon"/>
+      </module>
+    </product>
+    <product id="arg_spacefuel_TD" ware="spacefuel" owner="hatikvah" type="factory">
+      <quotas>
+        <quota galaxy="1" sector="1" />
+      </quotas>
+      <location class="sector" macro="thedeep_sector_thedeepc001thedeeps001_macro" faction="[argon]" solitary="true" >
+        <economy max="0.75" maxbound="false" />
+      </location>
+      <module>
+        <select ware="spacefuel" race="argon"/>
+      </module>
+    </product>
+    <product id="arg_engineparts_TD" ware="engineparts" owner="argon" type="factory">
+      <quotas>
+        <quota galaxy="1" sector="1" />
+      </quotas>
+      <location class="sector" macro="thedeep_sector_thedeepc001thedeeps001_macro" faction="[argon]" relation="self" comparison="ge">
+        <economy max="0.75" maxbound="false" />
+      </location>
+      <module>
+        <select ware="engineparts" race="argon"/>
+      </module>
+    </product>
+    <product id="arg_antimattercells_TD" ware="antimattercells" owner="argon" type="factory">
+      <quotas>
+        <quota galaxy="1" sector="1" />
+      </quotas>
+      <location class="sector" macro="thedeep_sector_thedeepc001thedeeps001_macro" faction="[argon]" relation="self" comparison="ge">
+        <region ware="hydrogen" max="100000" />
+      </location>
+      <module>
+        <select ware="antimattercells" race="argon"/>
+      </module>
+    </product>
+
+    <product id="bor_refinedmetals_TS" ware="refinedmetals" owner="boron" type="factory">
+        <quotas>
+            <quota galaxy="1" sector="1" />
+        </quotas>
+        <location class="sector" macro="thedeep_sector_theshallowsc001theshallowss001_macro" faction="[boron]" relation="self" comparison="ge">
+            <region ware="ore" max="100000" />
+            <economy max="0.75" maxbound="false" />
+        </location>
+        <module>
+            <select ware="refinedmetals" race="boron"/>
+        </module>
+        </product>
+        <product id="bor_dronecomponents_TS" ware="dronecomponents" owner="boron" type="factory">
+        <quotas>
+            <quota galaxy="1" sector="1" />
+        </quotas>
+        <location class="sector" macro="thedeep_sector_theshallowsc001theshallowss001_macro" faction="boron" relation="self" comparison="ge">
+            <economy min="0.75" maxbound="false" />
+        </location>
+        <module>
+            <select ware="dronecomponents" race="boron"/>
+        </module>
+        </product>
+        <product id="bor_advancedelectronics_TS" ware="advancedelectronics" owner="boron" type="factory">
+        <quotas>
+            <quota galaxy="1" sector="1" />
+        </quotas>
+        <location class="sector" macro="thedeep_sector_theshallowsc001theshallowss001_macro" faction="boron" relation="self" comparison="ge">
+            <economy min="0.75" maxbound="false" />
+        </location>
+        <module>
+            <select ware="advancedelectronics" race="boron"/>
+        </module>
+        </product>
+        <product id="bor_antimattercells_TS" ware="antimattercells" owner="boron" type="factory">
+        <quotas>
+            <quota galaxy="1" sector="1" />
+        </quotas>
+        <location class="sector" macro="thedeep_sector_theshallowsc001theshallowss001_macro" faction="boron" relation="self" comparison="ge">
+            <economy min="0.75" maxbound="false" />
+        </location>
+        <module>
+            <select ware="antimattercells" race="boron"/>
+        </module>
+        </product>
+        <product id="bor_energycells_TS" ware="energycells" owner="boron" type="factory">
+        <quotas>
+            <quota galaxy="1" cluster="1" />
+        </quotas>
+        <location class="sector" macro="thedeep_sector_theshallowsc001theshallowss001_macro" faction="boron" relation="self" comparison="ge" >
+            <economy max="0.75" maxbound="false" />
+        </location>
+        <module>
+            <select ware="energycells" race="boron"/>
+        </module>
+        </product>
+        <product id="bor_water_TS" ware="water" owner="boron" type="factory">
+        <quotas>
+            <quota galaxy="1" sector="1" />
+        </quotas>
+        <location class="sector" macro="thedeep_sector_theshallowsc001theshallowss001_macro" faction="boron" relation="self" comparison="ge" matchextension="false" >
+            
+        </location>
+        <module>
+            <select ware="water" race="boron"/>
+        </module>
+        </product>
+
+  </add>
 
 </diff>

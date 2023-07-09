@@ -7,7 +7,7 @@
       <sounds>
         <music ref="music_dlc_boron_soundtrack_border" />
       </sounds>
-      <area sunlight="0.29" economy="0.75" security="0.75" factionlogic="true" />
+      <area sunlight="0.49" economy="0.75" security="0.75" factionlogic="true" />
       <system>
         <space environment="{1042,12061}(Heavy Radiation)" />
         <suns>

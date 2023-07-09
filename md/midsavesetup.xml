@@ -1,38 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <mdscript name="MidSaveTheDeepCheck" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="md.xsd">
   <cues>
-    <!-- will run once, either on gamestart or when a game is loaded where this mod was not active before -->
-    <cue name="Setup" namespace="this" version="1">
-      <conditions>
-        <event_cue_signalled cue="md.Setup.Start"/>
-      </conditions>
-      <actions/>
-      <cues/>
-    </cue>
-
-    <!--Run Start_Actions on a new game-->
-    <cue name="Start" namespace="this">
-      <actions>
-        <include_actions ref="Start_Actions"/>
-        <cancel_cue cue="Game_Loaded"/>
-      </actions>
-    </cue>
-
-    <!--Run Start_Actions when loading a savegame with the DLC enabled for the first time-->
+    <!-- For players that install the mod after KE story activates the gates, this script will hook in The Deep -->
     <cue name="Game_Loaded" namespace="this">
       <conditions>
-        <event_game_loaded/>
+        <check_any>
+          <event_cue_signalled cue="md.Setup.Start"/>
+          <event_game_loaded/>
+        </check_any>
         <check_value value="md.Setup_DLC_Boron.Boron_Gates_Open_KingdomEnd.state == cuestate.complete"/>                     
       </conditions>
       <actions>
-        <cancel_cue cue="Start"/>
         <find_sector macro="macro.thedeep_sector_thedeepc001thedeeps001_macro" space="player.galaxy" required="true" name="$TheDeepSector" />
-		<find_sector macro="macro.thedeep_sector_theshallowsc001theshallowss001_macro" space="player.galaxy" required="true" name="$TheShallowsSector" />
-		
-		<find_gate name="$TheDeepGates" multiple="true" space="$TheDeepSector" active="false" />
-		<find_gate name="$TheShallowsGates" multiple="true" space="$TheShallowsSector" active="false" />
-		<debug_text text="'KingdomEndState: ' + md.Setup_DLC_Boron.Boron_Gates_Open_KingdomEnd.state"/>
-				<debug_text text="'KingdomEndState was complete so lets make sure the two sector gates are activated.'" />
+		    <find_sector macro="macro.thedeep_sector_theshallowsc001theshallowss001_macro" space="player.galaxy" required="true" name="$TheShallowsSector" />
+        <find_gate name="$TheDeepGates" multiple="true" space="$TheDeepSector" active="false" />
+        <find_gate name="$TheShallowsGates" multiple="true" space="$TheShallowsSector" active="false" />
+        <debug_text text="'TheDeep: KingdomEndState: ' + md.Setup_DLC_Boron.Boron_Gates_Open_KingdomEnd.state" filter="scripts" />
 				<do_for_each name="$g" in="$TheDeepGates">
 					<do_if value=" ($g.exit.exists) and ($g.exit.sector == $TheShallowsSector)">
 						<set_value name="$TheShallows_TheDeepGate" exact="$g.exit" />
