@@ -27,6 +27,19 @@
   <dataset macro="thedeep_sector_thedeepc001thedeeps001_macro">
     <properties>
       <identification name="{900001,100001}" description="{900001,100002}"/>
+      <resourceareas>
+        <resourcearea amount="3" ref="sphere_large_hydrogen_high_slow" />
+        <resourcearea amount="3" ref="sphere_medium_ice_high_slow" />
+        <resourcearea amount="2" ref="sphere_tiny_ice_medium_average" />
+        <resourcearea amount="4" ref="sphere_large_ore_high_slow" />
+        <resourcearea amount="4" ref="sphere_small_ore_medium_average" />
+        <resourcearea amount="3" ref="sphere_tiny_ore_low_fast" />
+        <resourcearea amount="4" ref="sphere_large_silicon_high_slow" />
+        <resourcearea amount="4" ref="sphere_small_silicon_medium_average" />
+        <resourcearea amount="3" ref="sphere_tiny_silicon_low_fast" />
+        <resourcearea amount="3" ref="sphere_small_rawscrap_medium_average" />
+        <resourcearea amount="3" ref="sphere_tiny_rawscrap_low_average" />
+      </resourceareas>
       <!-- <area sunlight="1.0" economy="0.0" security="0.0"/> -->
     </properties>
   </dataset>
@@ -58,6 +71,16 @@
   <dataset macro="thedeep_sector_theshallowsc001theshallowss001_macro">
     <properties>
       <identification name="{900001,100003}" description="{900001,100004}"/>
+      <resourceareas>
+        <resourcearea amount="4" ref="sphere_large_ore_high_slow" />
+        <resourcearea amount="4" ref="sphere_small_ore_medium_average" />
+        <resourcearea amount="3" ref="sphere_tiny_ore_low_fast" />
+        <resourcearea amount="4" ref="sphere_large_silicon_high_slow" />
+        <resourcearea amount="4" ref="sphere_small_silicon_medium_average" />
+        <resourcearea amount="3" ref="sphere_tiny_silicon_low_fast" />
+        <resourcearea amount="3" ref="sphere_small_rawscrap_medium_average" />
+        <resourcearea amount="3" ref="sphere_tiny_rawscrap_low_average" />
+      </resourceareas>
       <!-- <area sunlight="1.0" economy="0.0" security="0.0"/> -->
     </properties>
   </dataset>
