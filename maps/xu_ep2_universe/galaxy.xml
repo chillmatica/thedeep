@@ -4,7 +4,7 @@
     <!-- The Deep Cluster -->
     <connection name="thedeep_cluster_thedeepc001_connection" ref="clusters">
       <offset>
-        <position x="-105000000" y="0" z="43300000"/>
+        <position x="-90000000" y="0" z="51960000"/>
       </offset>
       <macro ref="thedeep_cluster_thedeepc001_macro" connection="galaxy"/>
     </connection>
@@ -18,7 +18,7 @@
     <!-- The Shallows Cluster -->
     <connection name="thedeep_cluster_theshallowsc001_connection" ref="clusters">
       <offset>
-        <position x="-120000000" y="0" z="34640000"/>
+        <position x="-105000000" y="0" z="60620000"/>
       </offset>
       <macro ref="thedeep_cluster_theshallowsc001_macro" connection="galaxy"/>
     </connection>
